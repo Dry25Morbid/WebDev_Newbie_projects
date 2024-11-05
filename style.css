@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+/* || Resetting  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 62%;
+}
+/* || LAYOUT */
+header .top {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+}
+header .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+main {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+/* ||for mobile */
+@media (max-width: 522px) {
+  header .top {
+    flex-direction: column;
+    align-items: center;
+    min-height: 4rem;
+  }
+  header .top p {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+  }
+}
+
+/* || Styling Elements */
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.box {
+  width: 10rem;
+  background-color: #eee;
+  color: #222;
+  font-size: 5rem;
+  min-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  border: 4px solid #eee;
+  position: relative;
+  bottom: 5rem;
+  z-index: -1;
+}
+
+.btn {
+  background-color: #eee;
+  color: #222;
+  font-family: inherit;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 12rem;
+  min-height: 4rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+main p {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+main .number {
+  background-color: #222;
+  color: #eee;
+  width: 12rem;
+  min-height: 4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  font: inherit;
+  font-size: 3rem;
+  text-align: center;
+}
